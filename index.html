@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farmagen | Pedís por WhatsApp, te confirmamos y te lo llevamos</title>
-<meta name="description" content="Mandás la receta por WhatsApp, te confirmamos cobertura y precio, y coordinamos el envío o el retiro. Así trabaja Farmagen.">
+<title>Farmagen | Recetas por WhatsApp, cobertura confirmada antes de pagar</title>
+<meta name="description" content="Mandás la receta por WhatsApp. Farmagen confirma la cobertura y el precio antes de que pagues, y coordina el retiro o el envío el mismo día. Villa Martelli.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +18,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="#inicio" class="logo">
-      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f9d58"/><path d="M28 14h8v14h14v8H36v14h-8V36H14v-8h14z" fill="#ffffff"/></svg>
+      <span class="logo-mark" aria-hidden="true">℞</span>
       <span>Farmagen</span>
     </a>
 
@@ -24,13 +27,13 @@
     </button>
 
     <nav class="nav" id="navMenu">
-      <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
+      <a href="#farmagen">Sobre Farmagen</a>
       <a href="#horarios">Horarios</a>
-      <a href="#ubicacion">Ubicación</a>
       <a href="#contacto">Contacto</a>
+      <!-- EDITAR: número de WhatsApp real en formato internacional -->
       <a href="https://wa.me/5491100000000?text=Hola%20Farmagen%2C%20quiero%20hacer%20una%20consulta" class="btn btn-whatsapp" target="_blank" rel="noopener">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
         WhatsApp
       </a>
     </nav>
@@ -42,27 +45,44 @@
   <section id="inicio" class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <!-- EDITAR: este dato de tiempo de respuesta es de ejemplo, ajustalo a lo que realmente puedan cumplir -->
-        <span class="eyebrow">Respondemos en menos de 10 minutos</span>
-        <h1>Mandás la receta por WhatsApp. Nosotros hacemos el resto.</h1>
-        <p>Te confirmamos si tu obra social cubre el medicamento, cuánto pagás y si lo pasás a buscar o te lo llevamos. Sin turnero, sin formularios, sin bajar ninguna app.</p>
+        <h1>Mandás la receta. Confirmamos cobertura y precio. Retirás o te lo llevamos.</h1>
+        <p>Sacás una foto de la receta y de tu credencial, la mandás por WhatsApp y la dirección técnica la revisa antes de despachar nada. Sin turnero, sin formularios, sin bajar ninguna app.</p>
         <div class="hero-actions">
           <a href="https://wa.me/5491100000000?text=Hola%20Farmagen%2C%20quiero%20hacer%20un%20pedido" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
             Pedir por WhatsApp
           </a>
           <a href="#servicios" class="btn btn-outline">Ver servicios</a>
         </div>
-        <ul class="hero-badges">
-          <li>🚚 Pedís antes de las 18 h, llega hoy</li>
-          <li>🩺 Te confirmamos el descuento antes de pagar</li>
-          <li>🌙 Guardia: preguntanos si hoy nos toca</li>
-        </ul>
+        <!-- EDITAR: matrícula y dirección técnica reales -->
+        <p class="hero-meta">Dirección técnica: Farm. Valeria Sonzini — Mat. Prof. N.º 18.442 · Villa Martelli</p>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="cross-badge">
-          <svg width="120" height="120" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0f9d58"/><path d="M28 12h8v16h16v8H36v16h-8V36H12v-8h16z" fill="#ffffff"/></svg>
+
+      <div class="hero-visual">
+        <div class="ticket" aria-hidden="true">
+          <div class="ticket-head">
+            <span>FARMAGEN</span>
+            <span class="ticket-no">N.º 04821</span>
+          </div>
+          <ol class="ticket-steps">
+            <li><span class="ticket-step-n">1</span> RECETA POR FOTO</li>
+            <li><span class="ticket-step-n">2</span> CONFIRMAMOS COBERTURA</li>
+            <li><span class="ticket-step-n">3</span> RETIRÁS O TE LO LLEVAMOS</li>
+          </ol>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stamp-section">
+    <div class="container stamp-inner">
+      <div class="stamp" id="stamp">
+        <span class="stamp-status" id="stampStatus">—</span>
+        <span class="stamp-detail" id="stampDetail">calculando horario</span>
+      </div>
+      <div class="stamp-copy">
+        <p class="stamp-label">Sello en vivo</p>
+        <p>Este sello se actualiza solo, según la hora y los horarios reales de atención de abajo.</p>
       </div>
     </div>
   </section>
@@ -70,71 +90,107 @@
   <section id="servicios" class="section">
     <div class="container">
       <h2>Servicios</h2>
-      <p class="section-lead">Esto es lo que resolvemos todos los días por WhatsApp:</p>
-      <div class="cards-grid">
-        <article class="card">
-          <div class="card-icon">💊</div>
-          <h3>Medicamentos</h3>
-          <p>Con receta o de venta libre. Si no te acordás el nombre exacto, contanos para qué es y te decimos cuál llevar.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🚚</div>
-          <h3>Delivery</h3>
-          <!-- EDITAR: ajustar horario de corte y tiempos reales de entrega -->
-          <p>Pedís antes de las 18 h y te lo llevamos ese mismo día. Después de esa hora, sale a primera hora del día siguiente.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🩺</div>
-          <h3>Cobertura</h3>
-          <!-- EDITAR: listar las obras sociales/prepagas reales que aceptan -->
-          <p>Mandanos foto de tu credencial y del medicamento. Te confirmamos el descuento antes de que pagues.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🧴</div>
-          <h3>Perfumería y dermocosmética</h3>
-          <p>Si buscás una marca puntual, preguntanos antes de venir: te confirmamos stock al toque.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">📋</div>
-          <h3>Recetas por foto</h3>
-          <p>Sacale una foto a la receta y mandala por WhatsApp. La dejamos separada para que la retires cuando quieras.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🌙</div>
-          <h3>Guardia</h3>
-          <!-- EDITAR: confirmar el esquema real de turnos de guardia -->
-          <p>Hacemos guardia por turnos rotativos. Escribinos y te confirmamos en el momento si hoy nos toca a nosotros.</p>
-        </article>
-      </div>
+      <p class="section-lead">Lo que resolvemos todos los días por WhatsApp, sin necesidad de que vengas primero.</p>
+      <ul class="service-list">
+        <li>
+          <span class="tag">RX</span>
+          <div>
+            <h3>Medicamentos con y sin receta</h3>
+            <p>Si no te acordás el nombre exacto, contanos para qué es y te decimos cuál llevar.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">MAG</span>
+          <div>
+            <h3>Magistrales</h3>
+            <p>Elaboración a medida bajo receta, con los tiempos de preparación confirmados por WhatsApp.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">COB</span>
+          <div>
+            <!-- EDITAR: listar las obras sociales/prepagas reales que aceptan -->
+            <h3>Cobertura confirmada antes de pagar</h3>
+            <p>Trabajamos con IOMA, PAMI, OSDE, Swiss Medical y Galeno. Mandanos tu credencial y te confirmamos el descuento antes de que pagues.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">DER</span>
+          <div>
+            <h3>Perfumería y dermocosmética</h3>
+            <p>Si buscás una marca puntual, preguntanos antes de venir: te confirmamos stock al toque.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">VAC</span>
+          <div>
+            <h3>Vacunación antigripal</h3>
+            <p>Turnos en temporada, aplicada en el local por personal habilitado.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">PA</span>
+          <div>
+            <h3>Control de presión</h3>
+            <p>Sin cargo, sin turno. Pasás y te lo tomamos en el mostrador.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">ENV</span>
+          <div>
+            <!-- EDITAR: ajustar horario de corte y tiempos reales de entrega -->
+            <h3>Entrega el mismo día</h3>
+            <p>Pedís antes de las 18 h y te lo llevamos hoy. Después de esa hora, sale a primera hora del día siguiente.</p>
+          </div>
+        </li>
+        <li>
+          <span class="tag">GUA</span>
+          <div>
+            <!-- EDITAR: confirmar el esquema real de turnos de guardia -->
+            <h3>Guardia rotativa</h3>
+            <p>Hacemos guardia por turnos con otras farmacias de la zona. Escribinos y te confirmamos si hoy nos toca a nosotros.</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <section id="horarios" class="section section-alt">
-    <div class="container">
-      <h2>Horarios de atención</h2>
-      <!-- EDITAR: horarios reales -->
-      <div class="hours-table">
-        <div class="hours-row"><span>Lunes a Viernes</span><span>08:00 – 20:30</span></div>
-        <div class="hours-row"><span>Sábados</span><span>09:00 – 14:00</span></div>
-        <div class="hours-row"><span>Domingos y feriados</span><span>Cerrado (guardia según turno)</span></div>
-      </div>
+  <section id="farmagen" class="section section-alt">
+    <div class="container about-inner">
+      <h2>Sobre Farmagen</h2>
+      <!-- EDITAR: historia, nombre de dirección técnica y matrícula reales -->
+      <p>Farmagen atiende en Villa Martelli desde 2005, bajo la misma dirección técnica desde su apertura. En 2023 ordenamos el circuito de pedidos por WhatsApp para sacar el turnero presencial: la receta se revisa igual, pero el trámite se resuelve desde el celular.</p>
+      <p>Toda receta que entra por WhatsApp pasa por la dirección técnica antes de despacharse — la misma revisión que se haría en el mostrador, antes de que confirmemos precio y cobertura.</p>
+      <p class="about-signature">Farm. Valeria Sonzini · Mat. Prof. N.º 18.442 · Colegio de Farmacéuticos de la Pcia. de Buenos Aires</p>
     </div>
   </section>
 
-  <section id="ubicacion" class="section">
-    <div class="container ubicacion-inner">
+  <section id="horarios" class="section">
+    <div class="container horarios-inner">
       <div>
+        <h2>Horarios de atención</h2>
+        <!-- EDITAR: horarios reales -->
+        <table class="hours-table">
+          <tbody>
+            <tr><td>Lunes a viernes</td><td>08:00 – 20:30</td></tr>
+            <tr><td>Sábados</td><td>09:00 – 14:00</td></tr>
+            <tr><td>Domingos y feriados</td><td>Cerrado — guardia según turno</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="ubicacion">
         <h2>Ubicación</h2>
         <!-- EDITAR: dirección real -->
-        <p class="section-lead">Av. Siempre Viva 1234, Villa Martelli, Buenos Aires.</p>
+        <p class="section-lead">Av. Maipú 1847, Villa Martelli, Vicente López, Buenos Aires.</p>
         <p>Entrada a nivel de la vereda, sin escalones — pensada para carrito de bebé, silla de ruedas o si vas con bastón.</p>
-        <a href="https://wa.me/5491100000000?text=Hola%2C%20quer%C3%ADa%20consultar%20c%C3%B3mo%20llegar%20a%20la%20farmacia" class="btn btn-whatsapp" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
-      </div>
-      <div class="map-placeholder" role="img" aria-label="Mapa de ubicación de Farmagen">
-        <!-- EDITAR: reemplazar este bloque por un iframe de Google Maps con la dirección real, por ejemplo:
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0" loading="lazy"></iframe>
-        -->
-        <span>📍 Mapa próximamente</span>
+        <div class="map-placeholder" role="img" aria-label="Mapa de ubicación de Farmagen">
+          <!-- EDITAR: reemplazar este bloque por un iframe de Google Maps con la dirección real, por ejemplo:
+          <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="100%" style="border:0" loading="lazy"></iframe>
+          -->
+          <span>Mapa próximamente</span>
+        </div>
+        <a href="https://wa.me/5491100000000?text=Hola%2C%20quer%C3%ADa%20consultar%20c%C3%B3mo%20llegar%20a%20la%20farmacia" class="btn btn-whatsapp" target="_blank" rel="noopener">Preguntar cómo llegar</a>
       </div>
     </div>
   </section>
@@ -161,7 +217,7 @@
         <div class="contact-item">
           <span class="contact-label">Dirección</span>
           <!-- EDITAR -->
-          <span>Av. Siempre Viva 1234, Villa Martelli, Buenos Aires</span>
+          <span>Av. Maipú 1847, Villa Martelli, Buenos Aires</span>
         </div>
       </div>
     </div>
@@ -171,13 +227,14 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span>© <span id="year"></span> Farmagen. Todos los derechos reservados.</span>
-    <span>farmagen.ar</span>
+    <!-- EDITAR: matrícula y dirección real -->
+    <span>Farmagen · Dirección técnica: Farm. Valeria Sonzini · Mat. Prof. N.º 18.442 · Av. Maipú 1847, Villa Martelli</span>
+    <span>© <span id="year"></span> Farmagen · farmagen.ar</span>
   </div>
 </footer>
 
 <a href="https://wa.me/5491100000000?text=Hola%20Farmagen%2C%20quiero%20hacer%20una%20consulta" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
 </a>
 
 <script src="script.js"></script>
